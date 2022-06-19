@@ -8,4 +8,6 @@ COPY --from=builder /usr/bin/caddy /usr/bin/caddy
 
 COPY Caddyfile /etc/caddy/Caddyfile
 
+COPY consent-openapi.yaml /consent-openapi.yaml
+
 CMD ["caddy", "run", "--config", "/etc/caddy/Caddyfile"]

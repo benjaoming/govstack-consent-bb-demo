@@ -1,5 +1,10 @@
 {$SITE_ADDRESS}:80, {$SITE_ADDRESS}:443 {
-    respond "It works!"
-#    reverse_proxy /api/* 127.0.0.1:3000
-
+  route /api {
+    openapi {
+      spec /consent-openapi.yaml
+      fall_through
+      log_error
+    }
+  }
+  respond "hello world"
 }
