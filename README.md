@@ -9,6 +9,8 @@ The demo can be run on a local Docker environment using the following command:
 docker-compose up
 ```
 
+After this, you can visit for instance https://localhost:8888/api/org/policy/ -- notice that Caddy produces a self-signed SSL certificate that you have to accept.
+
 ## Components of the demo
 
 * An HTTP server (Caddy)
