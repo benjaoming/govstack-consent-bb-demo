@@ -1,5 +1,5 @@
 # GovStack Consent BB - demo
-A stand-alone Docker and Kubernetes configuration simulating the Consent BB specification.
+A stand-alone docker-compose configuration simulating the Consent BB specification.
 
 ## Running the demo
 

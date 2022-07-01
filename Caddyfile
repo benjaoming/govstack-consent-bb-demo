@@ -5,11 +5,11 @@
     path /api/*
   }
 
-  reverse_proxy @api {
-    to localhost:3000
-  }
-
   route @api {
+    uri strip_prefix /api
+    reverse_proxy {
+      to consent:8000
+    }
     openapi {
       spec /consent-openapi.yaml
       log_error
